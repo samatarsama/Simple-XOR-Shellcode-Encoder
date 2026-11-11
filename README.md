@@ -1,16 +1,11 @@
-## Simple XOR Shellcode Encoder
+# Simple XOR Shellcode Encoder
 
-Nothing fancy to see!
+A small Python utility for studying how bytewise XOR changes the representation of a byte array. Applying the same key twice recovers the original bytes.
 
-I’ve been using this for about a year now and wanted to share it with people learning malware development.
+## Run locally
 
-I use it simply to XOR-encode my shellcode quickly and easily.
-
-## Usage
-
-xor_key = x54 #Change this key like this "x65" easy !
-
-
-THEN RUN THE SCRIPT LIKE THIS 
-
+```sh
 python XOR_SHELLCODE.py
+```
+
+The sample byte array and XOR key are defined in [XOR_SHELLCODE.py](XOR_SHELLCODE.py). The script prints the transformed bytes as hexadecimal escape sequences.
